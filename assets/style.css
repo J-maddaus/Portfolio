@@ -92,16 +92,32 @@ flex-wrap: wrap;
     border-width: 1px;
   }
 
+  .work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 .main-card {
     
-    flex: 1 0 100px;
     padding: 10px;
     text-align: center;
   }
 
-.image {
-    width: 500px;
-    max-height: 500px;
+.main-card >img {
+    max-width: 700px;
+
+}
+
+#fourprojects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#fourprojects card{
+    flex-basis: 0 0 50%;
 }
 
 footer {
@@ -110,3 +126,4 @@ footer {
     background-color: black;
     color: rgb(240, 161, 3);
 }
+/* finish up by setting up media querys!!!!!
