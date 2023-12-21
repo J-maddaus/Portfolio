@@ -1,4 +1,5 @@
-*:before, *:after {
+*:before,
+*:after {
     box-sizing: inherit;
 
 }
@@ -23,13 +24,13 @@ body {
 
 .main-header h1 {
     display: inline-block;
-    
+
 }
 
-.main-header nav  {
+.main-header nav {
     background-color: rgb(99, 2, 2);
     overflow: hidden;
-  }
+}
 
 .main-header nav a {
     display: flex;
@@ -44,31 +45,31 @@ body {
 .main-header nav a:hover {
     background-color: #ddd;
     color: rgb(39, 6, 128);
-  }
-  
+}
+
 .main-header nav a.active {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
     background-color: #04AA6D;
     color: white;
-  }
+}
 
 .hero {
     height: 400px;
     width: 100%;
     margin-bottom: 25px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(./images/WIN_20231218_15_20_31_Pro.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/WIN_20231218_15_20_31_Pro.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.hero-text{
+.hero-text {
     text-align: left;
     position: absolute;
-    top:10%;
+    top: 10%;
     left: auto;
-    color:white;
+    color: white;
 }
 
 
@@ -79,8 +80,9 @@ body {
     margin-left: 20px;
 }
 
-main { display: flex;
-flex-wrap: wrap;
+main {
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -90,9 +92,9 @@ flex-wrap: wrap;
     text-align: center;
     border-style: solid;
     border-width: 1px;
-  }
+}
 
-  .work{
+.work {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,22 +103,25 @@ flex-wrap: wrap;
 }
 
 .main-card {
-    
+
     padding: 10px;
     text-align: center;
-  }
+}
 
-.main-card >img {
+/* setting maincards image to be no bigger than 700px*/
+.main-card>img {
     max-width: 700px;
 
 }
 
+/* setting four projects id to flex to fit screen*/
 #fourprojects {
     display: flex;
     flex-wrap: wrap;
 }
 
-#fourprojects card{
+/* setting four projects id to take up 50% of screen per card*/
+#fourprojects card {
     flex-basis: 0 0 50%;
 }
 
@@ -126,4 +131,21 @@ footer {
     background-color: black;
     color: rgb(240, 161, 3);
 }
+
+@media screen and (max-width: 768px) {
+    #fourprojects card {
+        width: 50%;
+    }
+}
+
+    @media screen and (max-width: 425px) {
+        #fourprojects card {
+            flex-direction: row;
+            width: 100%;
+        }
+    }
+    
+    
+
+
 /* finish up by setting up media querys!!!!!
